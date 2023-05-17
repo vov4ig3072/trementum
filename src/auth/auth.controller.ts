@@ -1,6 +1,6 @@
 import { Controller, Get, Query, Res, UseGuards } from '@nestjs/common';
 import { AuthService } from './services/auth.service';
-import googleClient from './google-client';
+import googleClient from '../google/google-client';
 import { ConfigService } from '@nestjs/config';
 import { GoogleConfig } from 'src/common/interfaces/config.interface';
 import { AuthGuard } from '@nestjs/passport';

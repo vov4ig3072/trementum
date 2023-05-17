@@ -5,9 +5,8 @@ import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prisma/prisma.module';
 import config from './common/configs/config';
-import { PrismaService } from './prisma/prisma.service';
 import { YoutoobeModule } from './youtoobe/youtoobe.module';
-import { NotificationModule } from './notification/notification.module';
+import { GoogleModule } from './google/google.module';
 
 @Module({
   imports: [
@@ -15,7 +14,7 @@ import { NotificationModule } from './notification/notification.module';
     AuthModule,
     PrismaModule,
     YoutoobeModule,
-    NotificationModule,
+    GoogleModule,
   ],
   controllers: [AppController],
   providers: [AppService],

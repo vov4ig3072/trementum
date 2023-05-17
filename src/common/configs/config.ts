@@ -7,6 +7,7 @@ const config: IConfig = {
       'https://www.googleapis.com/auth/userinfo.profile',
       'https://www.googleapis.com/auth/userinfo.email',
       'https://www.googleapis.com/auth/youtube.readonly',
+      'https://www.googleapis.com/auth/spreadsheets',
     ],
     redirect_uri: 'http://localhost:3007/auth/url',
   },

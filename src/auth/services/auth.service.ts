@@ -17,7 +17,11 @@ export class AuthService {
   }: IUser) {
     return this.prisma.sources.upsert({
       where: { email },
-      update: {},
+      update: {
+        auth: {
+          update: { where: { email }, data: { accessToken, refreshToken } },
+        },
+      },
       create: {
         email,
         firstName,

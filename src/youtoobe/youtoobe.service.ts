@@ -1,40 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import googleClient from 'src/auth/google-client';
 import { PrismaService } from 'src/prisma/prisma.service';
-import {} from 'google-auth-library';
-import { google, youtube_v3 } from 'googleapis';
+import { youtube_v3 } from 'googleapis';
+import { GoogleService } from 'src/google/google.service';
 
 @Injectable()
-export class YoutoobeService {
-  private readonly client = googleClient.client;
-
-  constructor(private readonly prisma: PrismaService) {}
-
-  private async getYoutoobe(userId: number): Promise<youtube_v3.Youtube> {
-    const { accessToken, refreshToken } =
-      await this.prisma.authProvider.findFirst({
-        where: { sourcesId: userId },
-      });
-
-    this.client.setCredentials({
-      access_token: accessToken,
-      refresh_token: refreshToken,
-    });
-
-    return google.youtube({ version: 'v3', auth: this.client });
-  }
-
-  async getVideos(userId: number): Promise<Array<youtube_v3.Schema$Video>> {
-    const client = await this.getYoutoobe(userId);
-// trementum@trementum.iam.gserviceaccount.com
-    google
-
-    const { data } = await client.videos.list({
-      part: ['snippet', 'recordingDetails', 'id', 'statistics'],
-      chart: 'mostPopular',
-    });
-
-    return data.items;
+export class YoutoobeService extends GoogleService {
+  constructor(prisma: PrismaService) {
+    super(prisma);
   }
 
   async getChannels(userId: number) {
@@ -108,6 +80,28 @@ export class YoutoobeService {
           where: { publishedAt: { gte: new Date(start), lte: new Date(end) } },
         },
       },
+    });
+
+    const { spreadsheets } = await this.getSheets(userId);
+
+    const values = posts
+      .map((post, index) => {
+        const result = [Object.values(post).map((v) => v.toString())];
+        if (!index) {
+          result.unshift(Object.keys(post));
+        }
+        return result;
+      })
+      .concat([
+        Object.keys(account),
+        Object.values(account).map((v) => v.toString()),
+      ]);
+
+    await spreadsheets.values.update({
+      spreadsheetId: process.env.GOOGLE_SPREADSHEETID,
+      range: `A1:G${values.length}`,
+      valueInputOption: 'RAW',
+      requestBody: { values },
     });
 
     return { posts, account };
