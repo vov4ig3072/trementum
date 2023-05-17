@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "trementum",
+  "private_key_id": "6c0128cd3301acdd3a002732f16f55d39361a4cb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKh1n2zh0FuVbt\nroJpvxYDH8ezHOYLF2tpgkhXQPb/dR0VPmE7+XUjC1Wqsb40BjEk6QSVgLH0u53K\nf/Rv3agstGoTF9pjXM9Y6x6+6Xk9/tLRKIzzMD5LgY0xhvCyPVdJZNXBGBn/obqI\n+u8uFVASVinVGJ906DHRCoklW9NByCz81f6MhfBa3G7BNwzhmcJGFI0aIP/Llylr\n2jTNOVgMVRFYZCWeay6mV52WeSoktX/tOjaGwyM8X3h9kRhl3lLT/oxlSGiWujUd\nkks+4yhw7JZv4HIFlIu/QiH4F8u8zi0Q/bCJyQ/lFkptHH0Bu9rPr+su6tdGhdDW\nUq87mppnAgMBAAECggEAEAWr3QCVVIdDFJlCVpyitdXlIIsKupnnCiPKa/dcaFKa\n3bwKSTUE9U7HlNzBkAVlYebP/AaAYuds0Ouqf3xo+jsToTW5Nd8jxYRkRvTa00gT\njtnHEijLj4GiP+bNp+wpDvSxNw4cZcLPqlffus+Tfr/eSK4iqfGsmehcIokkf1xI\nsLnuP5JvGu2U8re6zACZctCbgD3gM5AoJgKNRCFzt7r+w1RYPMDOwkfC9uydOWMA\nexX9tDc2TdumAawDIHfgOBpkKwS7KQp4CjXko+eExIwBvU9vAK62JsKA/Ri5gXHK\n3N/2q0uEi0pbeYJROPD3cYSlp1ZZN0i+V95eHeHIAQKBgQDl06yhVB6WlnysVFOu\nUffR3V1/80P3dG+JF79jxN9kEcHeDdacj3mVPLn9ShbyT02y0jiuiyaEAuJowwG9\n8wGtc9XUFCUS44YKXznupZN4oOGq/xrwg+t5P45luAwQX1npR+AYWau7wW3h9rHi\nHjtX3eG7zmAjeOS7tknzJIDSAQKBgQDhl9Utvqx6H6dLpNj1XqXqlCFs5midOLA3\nLnpx5mkrH4oGYChvGRi6vL1lX/2Mf2F0Y2a/JHutwRQPoXFkTNvBlkdBDYOLRKbl\nroxL627LKffYpTeVL3q3T3ILVoKAbyph8CXhGqSgu0O9wjP1amv8H4YBOjnDfXoX\n9W/EeM4cZwKBgQDAR34QYz5MIo8f5lU0bKN3U0qcd7wPVbzS56laISX8pNabntxE\nk8zWzL2WadwU0cBhsXt2nDiXDYq6txvH/X0TzuvAyTHTQcOs/cqMHL7qlz72PwQc\n4WGqSUArXfXJ5NxmTZnxBWSmasgx2qEsWrqvYpUu+RR52PUVDweDgrC8AQKBgFGe\nXEt7o+1fTGjK0JAd2UuAooNC7XCMlPyx/Sz+XuhyNb7OxXJEkzTkmmV2EEbnwzuX\nxxG6wmB/7aEmGN9gC1YD5+26VPBrOzL4Ltw85s3sdjZUuEJqdiyiOrGtb/PFxIDA\noQPLXuqkNgMOozvUcBM82H/TMBjxad4HN5PO3UtbAoGAc2r26oP6vEN91/aylPJT\ndN/NyLg8REmquiNebMKc9nW+MmAjhH6X73eUwAZ4gkP8z1F0w/YfH3V0WsZjDRDh\nLSu/T2GSOGgpPZ9fmomqgF7iNoUEUKA/gQvucmFa1CoHSyR+lmNVekbpQlTnBNmv\nH96OuYExjAv3UaRTiyRkFA8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "trementum@trementum.iam.gserviceaccount.com",
+  "client_id": "116727817439967772007",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/trementum%40trementum.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
